@@ -10,3 +10,7 @@ experiment 1 aim: To write a program to implement Sentence and Word Tokenization
 <li>experiment 7 aim:Write a program to implement Rule based Chunking in python
 <li>experiment 8 aim:Write a program to implement Named Entity Recognition for given corpus in python
 </ul>
+
+<hr>
+<p>Jha, Vandana; N, Manjunath; Shenoy, P Deepa; K R, Venugopal (2018), “Hindi Language Stop Words List”, Mendeley Data, v1
+http://dx.doi.org/10.17632/bsr3frvvjc.1#file-3cd9c2f9-4a58-4157-ba68-6dfc0448a8e6</p>
