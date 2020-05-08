@@ -1,16 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May  5 19:15:19 2020
-
-@author: rajmugdha
-"""
-
 
 from nltk.stem import PorterStemmer,LancasterStemmer
 from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import TreebankWordTokenizer
 
-words=word_tokenize("He was running and eating at same time. He has bad habit of swimming after playing long hours in the Sun.")
+t=TreebankWordTokenizer()
+textfile="text_english.txt"
+with open(textfile,"r") as file:
+    text=file.read()
+
+words=t.tokenize(text)
 
 wordnet_lemmatizer=WordNetLemmatizer()
 porterStemmer=PorterStemmer()
