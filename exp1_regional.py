@@ -1,4 +1,4 @@
-from nltk.tokenize import word_tokenize,sent_tokenize
+from nltk.tokenize import word_tokenize
 import codecs
 
 textfile="text_regional.txt"
