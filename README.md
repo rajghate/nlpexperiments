@@ -12,5 +12,6 @@ experiment 1 aim: To write a program to implement Sentence and Word Tokenization
 </ul>
 
 <hr>
+<h2>Hindi stopwords list</h2>
 <p>Jha, Vandana; N, Manjunath; Shenoy, P Deepa; K R, Venugopal (2018), “Hindi Language Stop Words List”, Mendeley Data, v1
 http://dx.doi.org/10.17632/bsr3frvvjc.1#file-3cd9c2f9-4a58-4157-ba68-6dfc0448a8e6</p>
