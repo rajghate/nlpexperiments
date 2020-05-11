@@ -35,7 +35,7 @@ words=[w for w in TreebankWordTokenizer().tokenize(text) if w not in stopwords a
 #VB VBD VBG VBN VBP=VERB
 #RB RBR RBS=ADV
 #NN NNS NNP NNPS=NOUN
-verb=["VB","VBD" ,"VBG" ,"VBN", "VBP"]
+verb=["VB","VBD" ,"VBG" ,"VBN", "VBP","MD"]
 adv=["RB", "RBR", "RBS"]
 adj=["JJ","JJR","JJS"]
 
