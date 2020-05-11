@@ -1,5 +1,37 @@
+from nltk.tag import tnt,pos_tag
+from nltk.corpus import indian
+from nltk.tokenize import TreebankWordTokenizer
+import codecs
+from googletrans import Translator
 import re
+import pandas as pd
 
+
+translator=Translator()
+train_data=indian.tagged_sents('hindi.pos')
+t=tnt.TnT()
+t.train(train_data)
+filename="text_regional.txt"
+
+with codecs.open(filename,encoding="utf-8") as file:
+    data=file.read()
+with codecs.open("final_stopwords.txt",encoding="utf-8") as file:
+    stopwordstext=file.read()
+
+
+#stopwords=list(stopwords.words('hindi'))
+stopwords=stopwordstext.split("\n")    
+
+words=[w for w in TreebankWordTokenizer().tokenize(data) if w not in stopwords and w not in ["|",".",","]]
+tags=t.tag(words)
+tag_list=[]
+for i,j in tags:
+  if j=="Unk":
+    tr=translator.translate(i)
+    tag=pos_tag([tr.text])[0][1]
+  else:
+    tag=j
+  tag_list.append([i,tag])
 
 suffixes = {
 	    1: ["ो", "े", "ू", "ु", "ी", "ि", "ा"],  
@@ -58,17 +90,16 @@ def hi_stem(word):
             ans += dict_special_suffixes[suf]
  
     return ans
+frame=[]
+with open("tags.txt","r") as file:
+    data=file.readlines()
+tags_dict={}
+for i in data:
+    tags_dict[i.split("\t")[0]]=i.split("\t")[1].replace("\n","")
 
-import codecs
-from nltk.tokenize import TreebankWordTokenizer
+for word,tag in tag_list:
+  root_word=hi_stem(word)
+  frame.append([word,tags_dict[tag],root_word])
 
-
-t=TreebankWordTokenizer()
-textfile="text_regional.txt"
-
-with codecs.open(textfile,encoding="utf-8") as file:
-    text=file.read()
-words=t.tokenize(text)
-print("{0:20}{1:20}".format("Word","stemmed output")) 
-for w in words:
-    print ("{0:20}{1:20}".format(w,hi_stem(w)))
+df=pd.DataFrame(frame,columns=['word','tag','root word'])
+print(df)

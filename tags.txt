@@ -9,26 +9,31 @@ JJR	adjective, comparative
 JJS	adjective, superlative	
 LS	list marker	1)
 MD	modal	
-NN	noun, singular 
+NN	noun, singular
+NNC	noun 
 NNS	noun plural	
 NNP	proper noun, singular	
 NNPS	proper noun, plural	
 PDT	predeterminer	
 POS	possessive ending	
 PRP	personal pronoun	
-PRP$	possessive pronoun	
+PRP$	possessive pronoun
+PREP	preposition
 RB	adverb	
 RBR	adverb, comparative	
 RBS	adverb, superlative	
 RP	particle	
 TO	to	
-UH	interjection	
+UH	interjection
+INTF	interjection	
 VB	verb, base form	
 VBD	verb, past tense	
 VBG	verb, gerund/present participle	
 VBN	verb, past participle	
 VBP	verb, sing. present, non-3d	
 VBZ	verb, 3rd person sing. present	
+VAUX	auxillary verb
+VNN	gerund suffix
 WDT	wh-determiner	
 WP	wh-pronoun	
 WP$	possessive wh-pronoun	

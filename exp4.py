@@ -42,6 +42,7 @@ adj=["JJ","JJR","JJS"]
 tags=pos_tag(words)
 frame=[]
 for word,tag in tags:
+    print(word)
     if tag in verb:
         root=wl.lemmatize(word,pos=w.VERB)
     elif tag in adv:
