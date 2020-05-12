@@ -1,0 +1,45 @@
+CC	coordinating conjunction
+CD	cardinal digit
+QFNUM	number
+DT	determiner
+EX	existential there 
+FW	foreign word
+IN	preposition
+JJ	adjective	
+JJR	adjective	
+JJS	adjective	
+LS	list marker	1)
+MD	verb	
+NN	noun
+NNC	noun 
+NNS	noun	
+NNP	noun	
+NNPS	noun	
+PDT	predeterminer	
+POS	possessive ending	
+PRP	pronoun	
+PRP$	pronoun
+PREP	preposition
+RB	adverb	
+RBR	adverb 	
+RBS	adverb	
+RP	particle	
+TO	to	
+UH	interjection
+INTF	interjection
+IN	interjection	
+VB	verb
+VBD	verb	
+VBG	verb	
+VBN	verb	
+VBP	verb	
+VBZ	verb	
+VAUX	verb
+VFM	verb
+VJJ	verb
+VNN	gerund 
+WDT	wh-determiner	
+WP	wh-pronoun	
+WP$	wh-pronoun	
+WRB	wh-abverb
+EOS	end of sentence	
