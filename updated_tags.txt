@@ -8,13 +8,13 @@ IN	preposition
 JJ	adjective	
 JJR	adjective	
 JJS	adjective	
-LS	list marker	1)
+LS	list marker	
 MD	verb	
 NN	noun
 NNC	noun 
 NNS	noun	
-NNP	noun	
-NNPS	noun	
+NNP	proper noun	
+NNPS	proper noun	
 PDT	predeterminer	
 POS	possessive ending	
 PRP	pronoun	
